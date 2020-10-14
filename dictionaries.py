@@ -164,21 +164,7 @@ def top_chars(phrase):
         for char in word:
             chars[char] = chars.get(char, 0) + 1 
         
-    top_chars = [char, 0]
 
-    final = []
-
-    for char in chars:
-        if chars.get(char) > top_chars[1]:
-            top_chars = [char, chars.get(char)]
-    
-    final.append(top_chars[0])
-    
-    for char in chars:
-        if chars.get(char) == top_chars[1] and char not in final:
-            final.append(char)
-
-    return final
 
 
     # tallies = {}
